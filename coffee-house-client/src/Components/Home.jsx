@@ -12,7 +12,7 @@ const Home = () => {
       <div className="grid grid-cols-2   gap-4 mx-5 my-8">
         {coffees &&
           coffees.map((coffee) => (
-            <CoffeeCard key={coffee._id} coffee={coffee}></CoffeeCard>
+            <CoffeeCard key={coffee._id} setCoffees={setCoffees} coffee={coffee}></CoffeeCard>
           ))}
       </div>
     </div>
